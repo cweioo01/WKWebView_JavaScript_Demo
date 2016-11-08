@@ -14,6 +14,7 @@
 		9A45FA561DD1B3ED00AABB6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A45FA541DD1B3ED00AABB6A /* LaunchScreen.storyboard */; };
 		9A45FA611DD1B3ED00AABB6A /* WKWebView_JavaScript_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45FA601DD1B3ED00AABB6A /* WKWebView_JavaScript_DemoTests.swift */; };
 		9A45FA6C1DD1B3ED00AABB6A /* WKWebView_JavaScript_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45FA6B1DD1B3ED00AABB6A /* WKWebView_JavaScript_DemoUITests.swift */; };
+		9A45FA7B1DD1B41200AABB6A /* JSCallOC.html in Resources */ = {isa = PBXBuildFile; fileRef = 9A45FA7A1DD1B41200AABB6A /* JSCallOC.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9A45FA671DD1B3ED00AABB6A /* WKWebView_JavaScript_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKWebView_JavaScript_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A45FA6B1DD1B3ED00AABB6A /* WKWebView_JavaScript_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebView_JavaScript_DemoUITests.swift; sourceTree = "<group>"; };
 		9A45FA6D1DD1B3ED00AABB6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A45FA7A1DD1B41200AABB6A /* JSCallOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSCallOC.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		9A45FA4A1DD1B3ED00AABB6A /* WKWebView_JavaScript_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				9A45FA791DD1B3F700AABB6A /* JSCallSwift */,
 				9A45FA4B1DD1B3ED00AABB6A /* AppDelegate.swift */,
 				9A45FA4D1DD1B3ED00AABB6A /* ViewController.swift */,
 				9A45FA4F1DD1B3ED00AABB6A /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				9A45FA6D1DD1B3ED00AABB6A /* Info.plist */,
 			);
 			path = WKWebView_JavaScript_DemoUITests;
+			sourceTree = "<group>";
+		};
+		9A45FA791DD1B3F700AABB6A /* JSCallSwift */ = {
+			isa = PBXGroup;
+			children = (
+				9A45FA7A1DD1B41200AABB6A /* JSCallOC.html */,
+			);
+			name = JSCallSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				9A45FA561DD1B3ED00AABB6A /* LaunchScreen.storyboard in Resources */,
 				9A45FA531DD1B3ED00AABB6A /* Assets.xcassets in Resources */,
 				9A45FA511DD1B3ED00AABB6A /* Main.storyboard in Resources */,
+				9A45FA7B1DD1B41200AABB6A /* JSCallOC.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
