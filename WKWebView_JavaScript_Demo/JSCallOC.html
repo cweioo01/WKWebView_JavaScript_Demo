@@ -38,6 +38,20 @@
         {
             //alert(resultNumber);
             document.getElementById("result").innerText = resultNumber;
+            }
+        function calculateForJS(inputValue)
+        {
+            if(inputValue == null) {
+                inputValue = 0;
+            }
+            window.webkit.messageHandlers.JSCallSwiftFirst.postMessage({body:{'inputValue': inputValue, 'color': 'redColor', 'inputNumber': inputValue}});
+        }
+    
+        function addSubView(viewColor)
+        {
+            
+            window.webkit.messageHandlers.addSubViewMessage.postMessage({body:viewColor});
+
         }
     
     </script>
@@ -61,26 +75,26 @@
         <center>
             
             <br/>
-            <input type="button" value="计算阶乘" onclick="native.calculateForJS(input.value);" />
+            <input type="button" value="计算阶乘"  onclick="calculateForJS(input.value)" />
             <br/>
             <br/>
             
             
-            <input type="button" value="测试log" onclick="log('测试');" />
+            <input type="button" value="测试log" onclick="log('测试')" />
             <br/>
             <br/>
             
-            <input type="button" value="oc原生Alert" onclick="alert('alert');" />
+            <input type="button" value="oc原生Alert" onclick="alert('alert')" />
             <br/>
             <br/>
             
-            <input type="button" value="addSubView" onclick="addSubView('view');" />
+            <input type="button" value="addSubView" onclick="addSubView('red')" />
             <br/>
             <br/>
-            <input type="button" value="多参数调用" onclick="mutiParams('参数1','参数2','参数3');" />
+            <input type="button" value="多参数调用" onclick="mutiParams('参数1','参数2','参数3')" />
             <br/>
             <br/>
-            <a id="push" href="#" onclick="native.pushViewControllerTitle('SecondViewController','secondPushedFromJS');">
+            <a id="push" href="#" onclick="pushViewControllerTitle('SecondViewController','secondPushedFromJS')">
                 push to second ViewController
             </a>
             
