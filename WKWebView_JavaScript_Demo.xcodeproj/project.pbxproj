@@ -15,6 +15,8 @@
 		9A45FA611DD1B3ED00AABB6A /* WKWebView_JavaScript_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45FA601DD1B3ED00AABB6A /* WKWebView_JavaScript_DemoTests.swift */; };
 		9A45FA6C1DD1B3ED00AABB6A /* WKWebView_JavaScript_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45FA6B1DD1B3ED00AABB6A /* WKWebView_JavaScript_DemoUITests.swift */; };
 		9A45FA7B1DD1B41200AABB6A /* JSCallOC.html in Resources */ = {isa = PBXBuildFile; fileRef = 9A45FA7A1DD1B41200AABB6A /* JSCallOC.html */; };
+		9A45FA7D1DD1B44400AABB6A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45FA7C1DD1B44400AABB6A /* RootViewController.swift */; };
+		9A45FA7F1DD1B5D400AABB6A /* JSAndSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45FA7E1DD1B5D400AABB6A /* JSAndSwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		9A45FA6B1DD1B3ED00AABB6A /* WKWebView_JavaScript_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebView_JavaScript_DemoUITests.swift; sourceTree = "<group>"; };
 		9A45FA6D1DD1B3ED00AABB6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A45FA7A1DD1B41200AABB6A /* JSCallOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSCallOC.html; sourceTree = "<group>"; };
+		9A45FA7C1DD1B44400AABB6A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		9A45FA7E1DD1B5D400AABB6A /* JSAndSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSAndSwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,9 @@
 		9A45FA4A1DD1B3ED00AABB6A /* WKWebView_JavaScript_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				9A45FA791DD1B3F700AABB6A /* JSCallSwift */,
+				9A45FA791DD1B3F700AABB6A /* JSCallSwift and SwiftCallJS */,
 				9A45FA4B1DD1B3ED00AABB6A /* AppDelegate.swift */,
+				9A45FA7C1DD1B44400AABB6A /* RootViewController.swift */,
 				9A45FA4D1DD1B3ED00AABB6A /* ViewController.swift */,
 				9A45FA4F1DD1B3ED00AABB6A /* Main.storyboard */,
 				9A45FA521DD1B3ED00AABB6A /* Assets.xcassets */,
@@ -128,12 +133,13 @@
 			path = WKWebView_JavaScript_DemoUITests;
 			sourceTree = "<group>";
 		};
-		9A45FA791DD1B3F700AABB6A /* JSCallSwift */ = {
+		9A45FA791DD1B3F700AABB6A /* JSCallSwift and SwiftCallJS */ = {
 			isa = PBXGroup;
 			children = (
 				9A45FA7A1DD1B41200AABB6A /* JSCallOC.html */,
+				9A45FA7E1DD1B5D400AABB6A /* JSAndSwiftViewController.swift */,
 			);
-			name = JSCallSwift;
+			name = "JSCallSwift and SwiftCallJS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +279,8 @@
 			files = (
 				9A45FA4E1DD1B3ED00AABB6A /* ViewController.swift in Sources */,
 				9A45FA4C1DD1B3ED00AABB6A /* AppDelegate.swift in Sources */,
+				9A45FA7D1DD1B44400AABB6A /* RootViewController.swift in Sources */,
+				9A45FA7F1DD1B5D400AABB6A /* JSAndSwiftViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +523,7 @@
 				9A45FA721DD1B3ED00AABB6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A45FA731DD1B3ED00AABB6A /* Build configuration list for PBXNativeTarget "WKWebView_JavaScript_DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +532,7 @@
 				9A45FA751DD1B3ED00AABB6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A45FA761DD1B3ED00AABB6A /* Build configuration list for PBXNativeTarget "WKWebView_JavaScript_DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +541,7 @@
 				9A45FA781DD1B3ED00AABB6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
