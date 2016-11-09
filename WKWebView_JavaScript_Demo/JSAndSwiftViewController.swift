@@ -16,7 +16,7 @@ import UIKit
 import WebKit
 
 class JSAndSwiftViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
-   @objc dynamic var webView: WKWebView?
+    var webView: WKWebView?
     let progress:UIProgressView = {
         let progress = UIProgressView(frame: CGRect(x: 0, y: 64, width: UIScreen.main.bounds.size.width, height: 5))
         progress.backgroundColor = UIColor.white
